@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Reports - Enterprise Dashboard</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+
+        <h1>Enterprise Dashboard</h1>
+
+        <nav aria-label="Main navigation">
+            <ul>
+
+                <li>
+                    <a href="../index.html">Dashboard</a>
+                </li>
+
+                <li>
+                    <a href="users.html">Users</a>
+                </li>
+
+                <li>
+                    <a href="reports.html" aria-current="page">
+                        Reports
+                    </a>
+                </li>
+
+            </ul>
+        </nav>
+
+    </header>
+
+
+    <!-- Sidebar -->
+    <aside aria-label="Sidebar navigation">
+
+        <h2>Dashboard Menu</h2>
+
+        <nav aria-label="Dashboard navigation">
+
+            <ul>
+
+                <li>
+                    <a href="../index.html">Overview</a>
+                </li>
+
+                <li>
+                    <a href="users.html">Users</a>
+                </li>
+
+                <li>
+                    <a href="reports.html" aria-current="page">
+                        Reports
+                    </a>
+                </li>
+
+            </ul>
+
+        </nav>
+
+    </aside>
+
+
+    <!-- Main Content -->
+    <main id="main-content">
+
+        <!-- Reports Overview -->
+        <section aria-labelledby="reports-heading">
+
+            <h2 id="reports-heading">
+                Reports
+            </h2>
+
+            <p>
+                View and manage enterprise reports.
+            </p>
+
+        </section>
+
+
+        <!-- Report Statistics -->
+        <section aria-labelledby="report-statistics-heading">
+
+            <h2 id="report-statistics-heading">
+                Report Statistics
+            </h2>
+
+            <article>
+                <h3>Total Reports</h3>
+                <p>450</p>
+            </article>
+
+            <article>
+                <h3>Completed Reports</h3>
+                <p>390</p>
+            </article>
+
+            <article>
+                <h3>Pending Reports</h3>
+                <p>60</p>
+            </article>
+
+        </section>
+
+
+        <!-- Reports Table -->
+        <section aria-labelledby="report-list-heading">
+
+            <h2 id="report-list-heading">
+                Recent Reports
+            </h2>
+
+            <table>
+
+                <caption>
+                    List of recently generated enterprise reports
+                </caption>
+
+                <thead>
+
+                    <tr>
+                        <th scope="col">Report Name</th>
+                        <th scope="col">Created By</th>
+                        <th scope="col">Date</th>
+                        <th scope="col">Status</th>
+                    </tr>
+
+                </thead>
+
+                <tbody>
+
+                    <tr>
+                        <td>Monthly User Report</td>
+                        <td>John Smith</td>
+                        <td>2026-09-01</td>
+                        <td>Completed</td>
+                    </tr>
+
+                    <tr>
+                        <td>System Activity Report</td>
+                        <td>Sarah Johnson</td>
+                        <td>2026-09-05</td>
+                        <td>Completed</td>
+                    </tr>
+
+                    <tr>
+                        <td>Employee Performance Report</td>
+                        <td>David Wilson</td>
+                        <td>2026-09-10</td>
+                        <td>Pending</td>
+                    </tr>
+
+                    <tr>
+                        <td>Security Audit Report</td>
+                        <td>Emily Brown</td>
+                        <td>2026-09-12</td>
+                        <td>Completed</td>
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </section>
+
+
+        <!-- Report Request Form -->
+        <section aria-labelledby="request-report-heading">
+
+            <h2 id="request-report-heading">
+                Request a Report
+            </h2>
+
+            <form>
+
+                <fieldset>
+
+                    <legend>
+                        Report Information
+                    </legend>
+
+
+                    <!-- Report Type -->
+                    <p>
+
+                        <label for="report-type">
+                            Report Type
+                        </label>
+
+                        <select
+                            id="report-type"
+                            name="report-type"
+                            required
+                        >
+
+                            <option value="">
+                                Select a report
+                            </option>
+
+                            <option value="user-report">
+                                User Report
+                            </option>
+
+                            <option value="activity-report">
+                                Activity Report
+                            </option>
+
+                            <option value="performance-report">
+                                Performance Report
+                            </option>
+
+                            <option value="security-report">
+                                Security Audit Report
+                            </option>
+
+                        </select>
+
+                    </p>
+
+
+                    <!-- Start Date -->
+                    <p>
+
+                        <label for="start-date">
+                            Start Date
+                        </label>
+
+                        <input
+                            type="date"
+                            id="start-date"
+                            name="start-date"
+                            required
+                        >
+
+                    </p>
+
+
+                    <!-- End Date -->
+                    <p>
+
+                        <label for="end-date">
+                            End Date
+                        </label>
+
+                        <input
+                            type="date"
+                            id="end-date"
+                            name="end-date"
+                            required
+                        >
+
+                    </p>
+
+
+                    <!-- Submit -->
+                    <button type="submit">
+                        Generate Report
+                    </button>
+
+                </fieldset>
+
+            </form>
+
+        </section>
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer>
+
+        <p>
+            &copy; 2026 Enterprise Dashboard. All rights reserved.
+        </p>
+
+    </footer>
+
+</body>
+
+</html>

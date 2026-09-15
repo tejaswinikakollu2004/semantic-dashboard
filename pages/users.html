@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Users - Enterprise Dashboard</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+
+        <h1>Enterprise Dashboard</h1>
+
+        <nav aria-label="Main navigation">
+            <ul>
+
+                <li>
+                    <a href="../index.html">Dashboard</a>
+                </li>
+
+                <li>
+                    <a href="users.html" aria-current="page">Users</a>
+                </li>
+
+                <li>
+                    <a href="reports.html">Reports</a>
+                </li>
+
+            </ul>
+        </nav>
+
+    </header>
+
+
+    <!-- Sidebar -->
+    <aside aria-label="Sidebar navigation">
+
+        <h2>Dashboard Menu</h2>
+
+        <nav aria-label="Dashboard navigation">
+
+            <ul>
+
+                <li>
+                    <a href="../index.html">Overview</a>
+                </li>
+
+                <li>
+                    <a href="users.html" aria-current="page">Users</a>
+                </li>
+
+                <li>
+                    <a href="reports.html">Reports</a>
+                </li>
+
+            </ul>
+
+        </nav>
+
+    </aside>
+
+
+    <!-- Main Content -->
+    <main id="main-content">
+
+        <!-- User Management -->
+        <section aria-labelledby="users-page-heading">
+
+            <h2 id="users-page-heading">
+                User Management
+            </h2>
+
+            <p>
+                Manage registered users and their account information.
+            </p>
+
+        </section>
+
+
+        <!-- User Table -->
+        <section aria-labelledby="user-list-heading">
+
+            <h2 id="user-list-heading">
+                User List
+            </h2>
+
+            <table>
+
+                <caption>
+                    Registered users and their account details
+                </caption>
+
+                <thead>
+
+                    <tr>
+                        <th scope="col">Name</th>
+                        <th scope="col">Email</th>
+                        <th scope="col">Role</th>
+                        <th scope="col">Status</th>
+                    </tr>
+
+                </thead>
+
+                <tbody>
+
+                    <tr>
+                        <td>John Smith</td>
+                        <td>john@example.com</td>
+                        <td>Administrator</td>
+                        <td>Active</td>
+                    </tr>
+
+                    <tr>
+                        <td>Sarah Johnson</td>
+                        <td>sarah@example.com</td>
+                        <td>Manager</td>
+                        <td>Active</td>
+                    </tr>
+
+                    <tr>
+                        <td>David Wilson</td>
+                        <td>david@example.com</td>
+                        <td>Employee</td>
+                        <td>Inactive</td>
+                    </tr>
+
+                    <tr>
+                        <td>Emily Brown</td>
+                        <td>emily@example.com</td>
+                        <td>Employee</td>
+                        <td>Active</td>
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </section>
+
+
+        <!-- Add User Form -->
+        <section aria-labelledby="add-user-heading">
+
+            <h2 id="add-user-heading">
+                Add New User
+            </h2>
+
+            <form>
+
+                <fieldset>
+
+                    <legend>
+                        User Information
+                    </legend>
+
+
+                    <!-- Full Name -->
+                    <p>
+
+                        <label for="user-name">
+                            Full Name
+                        </label>
+
+                        <input
+                            type="text"
+                            id="user-name"
+                            name="user-name"
+                            required
+                            minlength="2"
+                            autocomplete="name"
+                        >
+
+                    </p>
+
+
+                    <!-- Email -->
+                    <p>
+
+                        <label for="user-email">
+                            Email Address
+                        </label>
+
+                        <input
+                            type="email"
+                            id="user-email"
+                            name="user-email"
+                            required
+                            autocomplete="email"
+                        >
+
+                    </p>
+
+
+                    <!-- Role -->
+                    <p>
+
+                        <label for="user-role">
+                            Role
+                        </label>
+
+                        <select
+                            id="user-role"
+                            name="user-role"
+                            required
+                        >
+
+                            <option value="">
+                                Select a role
+                            </option>
+
+                            <option value="administrator">
+                                Administrator
+                            </option>
+
+                            <option value="manager">
+                                Manager
+                            </option>
+
+                            <option value="employee">
+                                Employee
+                            </option>
+
+                        </select>
+
+                    </p>
+
+
+                    <!-- Submit Button -->
+                    <button type="submit">
+                        Add User
+                    </button>
+
+                </fieldset>
+
+            </form>
+
+        </section>
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer>
+
+        <p>
+            &copy; 2026 Enterprise Dashboard. All rights reserved.
+        </p>
+
+    </footer>
+
+</body>
+
+</html>

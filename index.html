@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Enterprise Dashboard</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>Enterprise Dashboard</h1>
+
+        <nav aria-label="Main navigation">
+            <ul>
+                <li>
+                    <a href="index.html">Dashboard</a>
+                </li>
+
+                <li>
+                    <a href="pages/users.html">Users</a>
+                </li>
+
+                <li>
+                    <a href="pages/reports.html">Reports</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Sidebar -->
+    <aside aria-label="Sidebar navigation">
+
+        <h2>Dashboard Menu</h2>
+
+        <nav aria-label="Dashboard navigation">
+            <ul>
+                <li>
+                    <a href="index.html">Overview</a>
+                </li>
+
+                <li>
+                    <a href="pages/users.html">Users</a>
+                </li>
+
+                <li>
+                    <a href="pages/reports.html">Reports</a>
+                </li>
+            </ul>
+        </nav>
+
+    </aside>
+
+    <!-- Main Content -->
+    <main id="main-content">
+
+        <!-- Overview Section -->
+        <section aria-labelledby="overview-heading">
+
+            <h2 id="overview-heading">Dashboard Overview</h2>
+
+            <p>
+                Welcome to the Enterprise Dashboard.
+            </p>
+
+        </section>
+
+        <!-- Statistics Section -->
+        <section aria-labelledby="statistics-heading">
+
+            <h2 id="statistics-heading">Statistics</h2>
+
+            <article>
+                <h3>Total Users</h3>
+                <p>1,250</p>
+            </article>
+
+            <article>
+                <h3>Active Users</h3>
+                <p>980</p>
+            </article>
+
+            <article>
+                <h3>Reports Generated</h3>
+                <p>450</p>
+            </article>
+
+        </section>
+
+        <!-- Users Table -->
+        <section aria-labelledby="users-heading">
+
+            <h2 id="users-heading">Recent Users</h2>
+
+            <table>
+
+                <caption>
+                    List of recently registered users
+                </caption>
+
+                <thead>
+                    <tr>
+                        <th scope="col">Name</th>
+                        <th scope="col">Email</th>
+                        <th scope="col">Role</th>
+                        <th scope="col">Status</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+
+                    <tr>
+                        <td>John Smith</td>
+                        <td>john@example.com</td>
+                        <td>Administrator</td>
+                        <td>Active</td>
+                    </tr>
+
+                    <tr>
+                        <td>Sarah Johnson</td>
+                        <td>sarah@example.com</td>
+                        <td>Manager</td>
+                        <td>Active</td>
+                    </tr>
+
+                    <tr>
+                        <td>David Wilson</td>
+                        <td>david@example.com</td>
+                        <td>Employee</td>
+                        <td>Inactive</td>
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </section>
+
+        <!-- Add User Form -->
+        <section aria-labelledby="form-heading">
+
+            <h2 id="form-heading">Add New User</h2>
+
+            <form>
+
+                <fieldset>
+
+                    <legend>User Information</legend>
+
+                    <p>
+                        <label for="full-name">Full Name</label>
+
+                        <input
+                            type="text"
+                            id="full-name"
+                            name="full-name"
+                            required
+                            minlength="2"
+                            autocomplete="name"
+                        >
+                    </p>
+
+                    <p>
+                        <label for="email">Email Address</label>
+
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            required
+                            autocomplete="email"
+                        >
+                    </p>
+
+                    <p>
+                        <label for="role">Role</label>
+
+                        <select
+                            id="role"
+                            name="role"
+                            required
+                        >
+                            <option value="">Select a role</option>
+                            <option value="administrator">
+                                Administrator
+                            </option>
+                            <option value="manager">
+                                Manager
+                            </option>
+                            <option value="employee">
+                                Employee
+                            </option>
+                        </select>
+                    </p>
+
+                    <button type="submit">
+                        Add User
+                    </button>
+
+                </fieldset>
+
+            </form>
+
+        </section>
+
+        <!-- Modal Section -->
+        <section aria-labelledby="actions-heading">
+
+            <h2 id="actions-heading">User Actions</h2>
+
+            <button
+                type="button"
+                aria-haspopup="dialog"
+                aria-controls="confirmation-modal"
+                onclick="document.getElementById('confirmation-modal').showModal()"
+            >
+                Delete User
+            </button>
+
+            <dialog
+                id="confirmation-modal"
+                aria-labelledby="modal-title"
+                aria-describedby="modal-description"
+            >
+
+                <h2 id="modal-title">
+                    Confirm Action
+                </h2>
+
+                <p id="modal-description">
+                    Are you sure you want to delete this user?
+                </p>
+
+                <form method="dialog">
+
+                    <button value="cancel">
+                        Cancel
+                    </button>
+
+                    <button value="confirm">
+                        Confirm
+                    </button>
+
+                </form>
+
+            </dialog>
+
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+
+        <p>
+            &copy; 2026 Enterprise Dashboard. All rights reserved.
+        </p>
+
+    </footer>
+
+</body>
+
+</html>
